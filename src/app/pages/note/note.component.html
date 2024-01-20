@@ -1,0 +1,14 @@
+<main class="wrapper">
+<div class="flex justify-between mb-5">
+    <button [routerLink]="['']" class="primary">Go Back</button>
+    <button class="danger" (click)="deleteNote()">Delete</button>
+    <!-- <button [routerLink]="['../../edit-note']" (click)="editNote(note)">Edit</button> -->
+</div>
+    <div class="card overflow-auto"> 
+        <div class="flex justify-between">
+       <h1 class="text-3xl font-bold text-slate-950">{{note?.title}}</h1> 
+       <p class="text-slate-400"> {{note?.date | date }} </p>
+    </div>
+       <p class="text-slate-600  overflow-auto"> {{note?.content}} </p>
+    </div>
+</main>
