@@ -41,7 +41,7 @@ export class NotesService {
     this.note
     .pipe(take(1))
     .subscribe((notesArray: Note[]) => {
-      notesArray.splice(noteId , 1)
+      notesArray.splice(noteId ,1)
       this.note.next(notesArray)
   })
 

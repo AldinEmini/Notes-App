@@ -39,9 +39,9 @@ deleteNote(){
   this.router.navigate([''])
 }
 
-editNote(note: any) {
-  // Për shembull, përcaktoni një rrugë (route) për faqen e editimit
-  this.router.navigate(['/edit-note', note.id]);
-}
+// editNote(note: any) {
+//   // Për shembull, përcaktoni një rrugë (route) për faqen e editimit
+//   this.router.navigate(['/edit-note', note.id]);
+// }
 
 }
